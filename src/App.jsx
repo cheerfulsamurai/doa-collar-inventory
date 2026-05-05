@@ -17,15 +17,7 @@ const CSS = `
     --asgn-c:#c2410c;--asgn-bg:rgba(194,65,12,0.09);
     --del-c:#94a3b8;--del-bg:rgba(148,163,184,0.07);
   }
-  @media(prefers-color-scheme:dark){:root{
-    --bg:#0d1117;--surf:#161b22;--surf2:#1e242d;--surf3:#262d38;
-    --bdr:rgba(255,255,255,0.07);--bdr2:rgba(255,255,255,0.13);
-    --txt:#e6edf3;--txts:#8b949e;--txtm:#4a5568;
-    --recv-c:#60a5fa;--recv-bg:rgba(96,165,250,0.1);
-    --ready-c:#4ade80;--ready-bg:rgba(74,222,128,0.1);
-    --asgn-c:#fb923c;--asgn-bg:rgba(251,146,60,0.1);
-    --del-c:#4a5568;--del-bg:rgba(74,85,104,0.08);
-  }}
+
   body{background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,sans-serif;font-size:14px}
   input,select{font-family:inherit;font-size:13px;color:var(--txt);background:var(--surf2);border:1px solid var(--bdr2);border-radius:6px;padding:7px 10px;outline:none;transition:border-color 0.15s}
   input:focus,select:focus{border-color:var(--acc)}
