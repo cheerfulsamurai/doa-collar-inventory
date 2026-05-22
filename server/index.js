@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 const SEED = [
-  {id:'s1', serial:'16535',   type:'2 Dog Micro',   status:'Client Ready',       client:'', date:'' trainer:''},
+  {id:'s1', serial:'16535',   type:'2 Dog Micro',   status:'Client Ready',       client:'', date:'', trainer:''},
   {id:'s2', serial:'16578',   type:'2 Dog Micro',   status:'Client Ready',       client:'', date:'', trainer:''},
   {id:'s3', serial:'16579',   type:'2 Dog Micro',   status:'Client Ready',       client:'', date:'', trainer:''},
   {id:'s4', serial:'95750',   type:'2 Dog Standard',status:'Client Ready',       client:'', date:'', trainer:''},
