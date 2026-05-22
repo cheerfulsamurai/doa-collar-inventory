@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 const SEED = [
-  {id:'s1', serial:'16535',   type:'2 Dog Micro',   status:'Client Ready',       client:'', date:'', trainer:''},
+  {id:'s1', serial:'16535',   type:'2 Dog Micro',   status:'Client Ready',       client:'', date:'' trainer:''},
   {id:'s2', serial:'16578',   type:'2 Dog Micro',   status:'Client Ready',       client:'', date:'', trainer:''},
   {id:'s3', serial:'16579',   type:'2 Dog Micro',   status:'Client Ready',       client:'', date:'', trainer:''},
   {id:'s4', serial:'95750',   type:'2 Dog Standard',status:'Client Ready',       client:'', date:'', trainer:''},
@@ -118,7 +118,8 @@ app.get('/api/collars', async (req, res) => {
 });
 
 app.post('/api/collars', async (req, res) => {
-  const { id, serial, type } = req.body;
+  const { serial, type } = req.body;
+      const id = require('crypto').randomUUID();
   try {
     const { rows } = await pool.query(
       'INSERT INTO collars (id,serial,type,status,client,date,trainer) VALUES ($1,$2,$3,$4,$5,$6,$7) RETURNING *',
